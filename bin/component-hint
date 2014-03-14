@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+var cli = require('../lib/cli.js');
+
+cli.execute(process.argv.slice(2), function (error, checkError) {
+	if (error) {
+		cli.help(error.message);
+		process.exit(1);
+	}
+
+	if (checkError) {
+		process.exit(1);
+	}
+
+	process.exit(0);
+});

@@ -1,0 +1,34 @@
+{
+	"name": "component-hint",
+	"description": "Linting tool for components projects and packages",
+	"version": "0.0.1",
+	"author": "Wizcorp K.K. <info@wizcorp.jp>",
+	"homepage": "http://www.wizcorp.jp",
+	"engines": {
+		"node": "0.8.26"
+	},
+	"maintainers": [
+		{ "name": "Almir Kadric", "email": "akadric@wizcorp.jp" }
+	],
+	"bin": {
+		"component-hint": "./bin/component-hint"
+	},
+	"main": "./lib/component-hint.js",
+	"dependencies": {
+		"async": "0.2.10"
+	},
+	"devDependencies": {
+		"jsdoc": "3.3.0-alpha4",
+		"jshint": "2.4.4"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Wizcorp/component-hint.git"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "https://github.com/Wizcorp/component-hint/blob/master/LICENSE"
+		}
+	]
+}
