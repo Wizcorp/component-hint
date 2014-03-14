@@ -22,7 +22,7 @@ To Do
 Installation
 ------------
 ```
-	npm install component-hint
+npm install component-hint
 ```
 
 Usage
