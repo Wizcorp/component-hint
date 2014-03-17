@@ -1,7 +1,8 @@
 Component Hint
 ==============
-Component Hint is a component linting tool. The main goal is to detect nuisances prior to
-publication and alleviate debugging time (i.e. missing paths for local dependencies).
+Component Hint is a linting tool for [Component.io](https://github.com/component/component). The
+main goal is to detect nuisances prior to publication and alleviate debugging time (e.g. missing
+paths for local dependencies).
 
 Features
 --------
