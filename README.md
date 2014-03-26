@@ -8,6 +8,7 @@ Features
 --------
 * Ensures a given components contains a `component.json` file
 * Checks local dependencies exist within the given set of paths
+* Detect any unused paths in the `component.json` file
 * Checks local dependencies do not exist in more than 1 of the given paths
 * In the event a local dependency isn't resolved, it will give you a hint as to where you can find
   it (uses the given `--lookupPaths` options)
@@ -15,7 +16,6 @@ Features
 
 To Do
 -----
-* Detect unused paths in the `component.json` file
 * Parse scripts for usages of `require()` and ensure those components exist in the `component.json`
 * Check that the name inside the `component.json` file is the name used for the folder
 * Check that any files listed in the `component.json` file (i.e. scripts, styles, etc.) actually exist
