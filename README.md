@@ -17,6 +17,7 @@ Features
 * Check dependencies are only required at a single version through the project
 * Recurses into dependencies and checks if there are any other dependency errors
   (this can be switched to warning level by using --warn-on-deps argument)
+* Checks that a component doesn't have itself as a dependency
 
 To Do
 -----
