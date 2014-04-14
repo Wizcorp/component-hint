@@ -1,13 +1,14 @@
 Release history
 ===============
 
-vCurrent
---------
+v0.3.0
+------
 
 * Implemented dependency checking. This includes the checking of their existence in the provided
   `--depPaths` as well as checking that only a single version of any dependency is required in a
   given project. Also to aid status code management a `--warn-on-deps` argument was introduced which
   will switch the dependency errors to a warning level. And thus not affecting the exit status code.
+* Implemented self reference dependency check.
 
 v0.2.0
 ------
