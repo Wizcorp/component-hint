@@ -24,6 +24,7 @@ To Do
 * Parse scripts for usages of `require()` and ensure those components exist in the `component.json`
 * Check that the name inside the `component.json` file is the name used for the folder
 * Check that any files listed in the `component.json` file (i.e. scripts, styles, etc.) actually exist
+
 [Check here for issues](https://github.com/Wizcorp/component-hint/issues)
 
 Installation
