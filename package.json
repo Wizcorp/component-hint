@@ -15,7 +15,8 @@
 	},
 	"main": "./lib/component-hint.js",
 	"dependencies": {
-		"async": "0.2.10"
+		"async": "0.2.10",
+		"commander": "2.2.0"
 	},
 	"devDependencies": {
 		"jsdoc": "3.3.0-alpha4",

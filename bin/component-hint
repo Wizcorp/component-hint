@@ -2,9 +2,9 @@
 
 var cli = require('../lib/cli.js');
 
-cli.execute(process.argv.slice(2), function (error, checkError) {
+cli.execute(function (error, checkError) {
 	if (error) {
-		cli.help(error.message);
+		cli.errorHelp(error.message);
 		process.exit(1);
 	}
 
