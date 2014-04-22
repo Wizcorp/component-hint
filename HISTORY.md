@@ -1,6 +1,16 @@
 Release history
 ===============
 
+vCurrent
+--------
+
+* Re-factored flow and made component-hint an event emitter object. This allowed us to make for much
+  more natural data passing.
+* Introduced reporters for the formatting of CLI output.
+* Split tests up into 2 separate stages, onTheFly and postStage and refactored all existing tests to
+  match new architecture.
+
+
 v0.3.0
 ------
 
