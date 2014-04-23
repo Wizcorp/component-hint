@@ -11,6 +11,7 @@ vCurrent
   match new architecture.
 * Introduced verbose option to show progress as tests are completed. Also added final report showing
   total errors and warnings or success message.
+* Introduced quiet and silent options.
 
 
 v0.3.0
