@@ -9,6 +9,8 @@ vCurrent
 * Introduced reporters for the formatting of CLI output.
 * Split tests up into 2 separate stages, onTheFly and postStage and refactored all existing tests to
   match new architecture.
+* Introduced verbose option to show progress as tests are completed. Also added final report showing
+  total errors and warnings or success message.
 
 
 v0.3.0
