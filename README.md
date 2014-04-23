@@ -48,6 +48,7 @@ Usage
 
     -h, --help                  output usage information
     -V, --version               output the version number
+    -v, --verbose               Whether or not we should be verbose with our output.
     -r, --recursive             Whether or not we should recurse into local and external
                                 dependencies.
     -d, --dep-paths <paths>     Colon separated list of paths to external dependencies. (default:
