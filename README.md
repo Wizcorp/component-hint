@@ -18,12 +18,13 @@ Features
 * Recurses into dependencies and checks if there are any other dependency errors
   (this can be switched to warning level by using --warn-on-deps argument)
 * Checks that a component doesn't have itself as a dependency
+* Check that any files listed in the `component.json` file (i.e. scripts, styles, etc.) actually
+  exist
 
 To Do
 -----
 * Parse scripts for usages of `require()` and ensure those components exist in the `component.json`
 * Check that the name inside the `component.json` file is the name used for the folder
-* Check that any files listed in the `component.json` file (i.e. scripts, styles, etc.) actually exist
 * [Other issues](https://github.com/Wizcorp/component-hint/issues)
 
 Installation
@@ -41,20 +42,30 @@ component hint
 Usage
 -----
 ```
-Usage: component-hint [options] component_path [...]
+  Usage: component-hint [options] <component_path ...>
 
-Options:
-  --recursive          Whether or not we should recurse and lint dependencies
+  Options:
 
-  --depPaths=paths     Colon separated list of paths to dependency components. These
-                       paths will be used to recurse into installed components.
+    -h, --help                  output usage information
+    -V, --version               output the version number
+    -r, --recursive             Whether or not we should recurse into local and external
+                                dependencies.
+    -d, --dep-paths <paths>     Colon separated list of paths to external dependencies. (default:
+                                "./components")
+    -w, --warn-on-deps          If provided, errors caused by external dependencies will only result
+                                in a warning and not return a fail status code.
+    -l, --lookup-paths <paths>  Colon separated list of paths to check for the existence of missing
+                                local dependencies. This is used to give the user a hint where they
+                                can find them.
+        --reporter <path>       Path to reporter file to use for output formatting.
 
-  --warn-on-deps       If provided, 3rd party (dependencies) component errors will
-                       only result in a warning and not return a fail status code.
+  Examples:
 
-  --lookupPaths=paths  Colon separated list of paths to check for the existance of
-                       missing dependencies. This is used to give the user a hint
-                       where they can find dependencies.
+    Check multiple component entry points
+    $ component-hint /path/to/single/component /path/to/another/component
+
+    Check multiple component entry point which exist in the same folder
+    $ component-hint /path/to/multiple/component/folder/*/
 ```
 
 License
