@@ -54,6 +54,8 @@ Usage
                                 "./components")
     -w, --warn-on-deps          If provided, errors caused by external dependencies will only result
                                 in a warning and not return a fail status code.
+    -i, --ignore-paths <paths>  List of paths component-hint should ignore. These can be absoule,
+                                relative or regexes.
     -l, --lookup-paths <paths>  Colon separated list of paths to check for the existence of missing
                                 local dependencies. This is used to give the user a hint where they
                                 can find them.
