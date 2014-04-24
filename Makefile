@@ -1,6 +1,6 @@
 ##
 # component-hint project Makefile
-# description     : Makefile to install this project and it's dependencies along with other helpers
+# description     : Makefile to install this project and its dependencies along with other helpers
 # author          : Almir Kadric
 # created on      : 2014-04-23
 ##
