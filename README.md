@@ -48,13 +48,11 @@ Usage
 
     -h, --help                  output usage information
     -V, --version               output the version number
-    -v, --verbose               Whether or not we should be verbose with our output. (cannot be used
-                                with --quiet or --silent options)
-    -q, --quiet                 Using this option will result in only the final outcome being
-                                displayed.
-    -s, --silent                Whether or not we should show anything on screen at all.
-    -r, --recursive             Whether or not we should recurse into local and external
-                                dependencies.
+    -v, --verbose               Be verbose about the tests. (cannot be used with --quiet or
+                                --silent)
+    -q, --quiet                 Display only the final outcome.
+    -s, --silent                Suppress all output.
+    -r, --recursive             Recurse into local and external dependencies.
     -d, --dep-paths <paths>     Colon separated list of paths to external dependencies. (default:
                                 "./components")
     -w, --warn-on-deps          If provided, errors caused by external dependencies will only result
