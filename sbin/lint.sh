@@ -66,7 +66,7 @@ case ${COMMAND} in
 	"" )
 		eval "${JSHINT} ${PROJECTDIR}";
 	;;
-    "help" )
+	"help" )
 		printHelp;
 	;;
 	* )
