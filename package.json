@@ -21,7 +21,7 @@
 	},
 	"devDependencies": {
 		"jsdoc": "3.3.0-alpha4",
-		"jshint": "2.4.4"
+		"jshint": "2.5.0"
 	},
 	"repository": {
 		"type": "git",
