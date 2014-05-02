@@ -4,22 +4,24 @@ Component Hint is a linting tool for [Component.io](https://github.com/component
 main goal is to detect nuisances prior to publication and alleviate debugging time (e.g. missing
 paths for local dependencies).
 
-Features
---------
+Implemented Checks
+------------------
 * Ensures a given components contains a `component.json` file
-* Checks local dependencies exist within the given set of paths
-* Detect any unused paths in the `component.json` file
-* Checks local dependencies do not exist in more than 1 of the given paths
-* In the event a local dependency isn't resolved, it will give you a hint as to where you can find
-  it (uses the given `--lookupPaths` options)
-* Skips folders with the same name as a dependency if it does not contain a `component.json` file
-* Check dependencies exist in given list of paths
+* Checks each local dependency exists in exactly one of the given paths
+* Detects any unused paths in the `component.json` file
+* Check each external dependency exists in exactly one of the given dependency paths (--dep-paths)
 * Check dependencies are only required at a single version through the project
-* Recurses into dependencies and checks if there are any other dependency errors
-  (this can be switched to warning level by using --warn-on-deps argument)
 * Checks that a component doesn't have itself as a dependency
-* Check that any files listed in the `component.json` file (i.e. scripts, styles, etc.) actually
+* Checks that any files listed in the `component.json` file (i.e. scripts, styles, etc.) actually
   exist
+
+Other Features
+--------
+* In the event a local dependency isn't resolved, it will give you a hint as to where you can find
+  it (uses the given `--lookupPaths` option)
+* Skips folders with the same name as a dependency if it does not contain a `component.json` file
+* Recurses into dependencies and checks if there are any other dependency errors
+  (this can be switched to warning level by using --warn-on-deps option)
 
 To Do
 -----
@@ -31,6 +33,7 @@ Installation
 ------------
 ```
 npm install component-hint
+./node_modules/.bin/component-hint
 ```
 
 OR if installed globally component-hint can be accessed like any other component command
