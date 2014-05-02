@@ -12,6 +12,7 @@ vCurrent
 * Introduced verbose option to show progress as tests are completed. Also added final report showing
   total errors and warnings or success message.
 * Introduced quiet and silent options.
+* Implemented ignore argument with minimatch globbing.
 
 
 v0.3.0
