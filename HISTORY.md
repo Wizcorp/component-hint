@@ -1,9 +1,10 @@
 Release history
 ===============
 
-vCurrent
+v0.4.0
 --------
 
+* Implemented commander as CLI argument parser
 * Re-factored flow and made component-hint an event emitter object. This allowed us to make for much
   more natural data passing.
 * Introduced reporters for the formatting of CLI output.
@@ -13,6 +14,11 @@ vCurrent
   total errors and warnings or success message.
 * Introduced quiet and silent options.
 * Implemented ignore argument with minimatch globbing.
+* Implemented check which checks that any file listed in component.json (scripts, files, styles etc)
+  actually exist.
+* Integrated JSHint into the project
+* Fixed all JSHint error found
+* Other minor bug fixes and touch-ups
 
 
 v0.3.0
