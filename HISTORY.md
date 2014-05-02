@@ -9,6 +9,7 @@ vCurrent
 * Introduced reporters for the formatting of CLI output.
 * Split tests up into 2 separate stages, onTheFly and postStage and refactored all existing tests to
   match new architecture.
+* Implemented ignore argument with minimatch globbing.
 
 
 v0.3.0
