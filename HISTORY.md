@@ -1,8 +1,20 @@
 Release history
 ===============
 
+v0.4.2
+------
+
+* Fixed bug where CLI would go into infinite loop if console screen size was too small for output
+  formatting.
+
+v0.4.1
+------
+
+* Fixed bug where used paths were not being registered
+* Fixed Fixed Bug where index.js file was being assumed, even though not in component.json file
+
 v0.4.0
---------
+------
 
 * Implemented commander as CLI argument parser
 * Re-factored flow and made component-hint an event emitter object. This allowed us to make for much
