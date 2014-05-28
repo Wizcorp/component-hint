@@ -44,12 +44,14 @@ v0.3.0
   will switch the dependency errors to a warning level. And thus not affecting the exit status code.
 * Implemented self reference dependency check.
 
+
 v0.2.0
 ------
 
 * Implemented unused path check within local path test
 * Modified nodejs engine version to be anything 0.8 and above, 0.8.24 was too restrictive, and we
   could go lower than 0.8, however we decided to start there and move down if there is a request.
+
 
 v0.1.0
 ------
