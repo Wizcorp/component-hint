@@ -51,8 +51,8 @@ Usage
 
     -h, --help                  output usage information
     -V, --version               output the version number
-    -v, --verbose               Be verbose about the tests. (cannot be used with
-                                --quiet or --silent)
+    -v, --verbose               Be verbose during tests. (cannot be used with --quiet
+                                or --silent)
     -q, --quiet                 Display only the final outcome.
     -s, --silent                Suppress all output.
     -r, --recursive             Recurse into local and external dependencies.
