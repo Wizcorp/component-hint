@@ -51,20 +51,21 @@ Usage
 
     -h, --help                  output usage information
     -V, --version               output the version number
-    -v, --verbose               Be verbose about the tests. (cannot be used with --quiet or
-                                --silent)
+    -v, --verbose               Be verbose during tests. (cannot be used with --quiet
+                                or --silent)
     -q, --quiet                 Display only the final outcome.
     -s, --silent                Suppress all output.
     -r, --recursive             Recurse into local and external dependencies.
-    -d, --dep-paths <paths>     Colon separated list of paths to external dependencies. (default:
-                                "./components")
-    -w, --warn-on-deps          If provided, errors caused by external dependencies will only result
-                                in a warning and not return a fail status code.
-    -i, --ignore-paths <paths>  List of paths component-hint should ignore. These can be absoule,
-                                relative or regexes.
-    -l, --lookup-paths <paths>  Colon separated list of paths to check for the existence of missing
-                                local dependencies. This is used to give the user a hint where they
-                                can find them.
+    -d, --dep-paths <paths>     Colon separated list of paths to external
+                                dependencies. (default: "./components")
+    -w, --warn-on-deps          Errors caused by external dependencies will only
+                                result in a warning and not return a fail status
+                                code.
+    -i, --ignore-paths <paths>  List of paths component-hint should ignore. These can
+                                be absolute, relative or regexes.
+    -l, --lookup-paths <paths>  Colon separated list of paths to check for the
+                                existence of missing local dependencies. This is used
+                                to give the user a hint where they can find them.
         --reporter <path>       Path to reporter file to use for output formatting.
 
   Examples:
