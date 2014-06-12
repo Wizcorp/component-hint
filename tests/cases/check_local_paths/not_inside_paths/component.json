@@ -1,0 +1,17 @@
+{
+	"name": "not_inside_paths",
+	"dependencies": {
+	},
+	"local": [
+		"component_A",
+		"component_B",
+		"component_C"
+	],
+	"paths": [
+		".."
+	],
+	"styles": [
+	],
+	"scripts": [
+	]
+}

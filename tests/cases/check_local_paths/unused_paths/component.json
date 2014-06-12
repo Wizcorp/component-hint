@@ -1,0 +1,15 @@
+{
+	"name": "unused_paths",
+	"dependencies": {
+	},
+	"local": [
+	],
+	"paths": [
+		".",
+		".."
+	],
+	"styles": [
+	],
+	"scripts": [
+	]
+}

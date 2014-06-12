@@ -1,0 +1,17 @@
+{
+	"name": "in_multiple_paths",
+	"dependencies": {
+	},
+	"local": [
+		"component_A",
+		"component_B"
+	],
+	"paths": [
+		".",
+		".."
+	],
+	"styles": [
+	],
+	"scripts": [
+	]
+}

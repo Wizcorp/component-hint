@@ -1,0 +1,12 @@
+{
+	"name": "missing_files",
+	"dependencies": {
+	},
+	"local": [
+	],
+	"paths": [
+	],
+	"files": [
+		"test.file"
+	]
+}

@@ -1,0 +1,14 @@
+{
+	"name": "duplicate_dependencies",
+	"dependencies": {
+		"dependency_C": "*"
+	},
+	"local": [
+	],
+	"paths": [
+	],
+	"styles": [
+	],
+	"scripts": [
+	]
+}

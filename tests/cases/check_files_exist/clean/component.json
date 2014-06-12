@@ -1,0 +1,30 @@
+{
+	"name": "clean",
+	"dependencies": {
+	},
+	"local": [
+	],
+	"paths": [
+	],
+	"files": [
+		"test.file"
+	],
+	"fonts": [
+		"test.font"
+	],
+	"images": [
+		"test.image"
+	],
+	"json": [
+		"test.json"
+	],
+	"scripts": [
+		"test.script"
+	],
+	"styles": [
+		"test.style"
+	],
+	"templates": [
+		"test.template"
+	]
+}

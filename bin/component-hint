@@ -2,13 +2,13 @@
 
 var cli = require('../lib/cli.js');
 
-cli.execute(function (error, checkError) {
+cli.execute(process.argv, function (error, componentHint) {
 	if (error) {
 		cli.errorHelp(error.message);
 		process.exit(1);
 	}
 
-	if (checkError) {
+	if (componentHint.totalErrors) {
 		process.exit(1);
 	}
 

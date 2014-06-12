@@ -1,0 +1,13 @@
+{
+	"name": "dependencyB",
+	"dependencies": {
+	},
+	"local": [
+	],
+	"paths": [
+	],
+	"styles": [
+	],
+	"scripts": [
+	]
+}

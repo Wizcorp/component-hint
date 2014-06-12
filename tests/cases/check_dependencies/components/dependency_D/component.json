@@ -1,0 +1,14 @@
+{
+	"name": "dependency_D",
+	"dependencies": {
+		"dependency_D": "*"
+	},
+	"local": [
+	],
+	"paths": [
+	],
+	"styles": [
+	],
+	"scripts": [
+	]
+}

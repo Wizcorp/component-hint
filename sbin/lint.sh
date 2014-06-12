@@ -23,7 +23,7 @@ updateGitHooks() {
 	cat >${PROJECTDIR}/.git/hooks/pre-commit <<EOF
 #!/bin/bash
 PROJECTDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)";
-make -C "${PROJECTDIR}" lint lintFilter=staged
+make -C "${PROJECTDIR}" test lintFilter=staged
 EOF
 
 	# Update hook permissions

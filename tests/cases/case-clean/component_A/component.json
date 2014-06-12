@@ -1,0 +1,17 @@
+{
+	"name": "component_A",
+	"dependencies": {
+		"dependencyA": "*",
+		"dependencyB": "*"
+	},
+	"local": [
+		"component_B"
+	],
+	"paths": [
+		".."
+	],
+	"styles": [
+	],
+	"scripts": [
+	]
+}

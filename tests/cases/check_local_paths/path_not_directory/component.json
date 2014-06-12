@@ -1,0 +1,17 @@
+{
+	"name": "path_not_directory",
+	"dependencies": {
+	},
+	"local": [
+		"component_A",
+		"component_B"
+	],
+	"paths": [
+		"..",
+		"test"
+	],
+	"styles": [
+	],
+	"scripts": [
+	]
+}
