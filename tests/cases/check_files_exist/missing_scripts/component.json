@@ -1,0 +1,12 @@
+{
+	"name": "missing_scripts",
+	"dependencies": {
+	},
+	"local": [
+	],
+	"paths": [
+	],
+	"scripts": [
+		"test.script"
+	]
+}

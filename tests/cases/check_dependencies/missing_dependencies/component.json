@@ -1,0 +1,14 @@
+{
+	"name": "missing_dependencies",
+	"dependencies": {
+		"dependency_B": "*"
+	},
+	"local": [
+	],
+	"paths": [
+	],
+	"styles": [
+	],
+	"scripts": [
+	]
+}

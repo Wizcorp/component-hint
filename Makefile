@@ -22,7 +22,10 @@ define helpText
 
 make install         Install project dependencies
 make dev             Install & setup project & development dependencies
-make lint            Lint the entire project
+
+make test            Runs all tests (shortcut for test-lint and test-unit).
+make test-unit       Run all unit tests
+make test-lint       Lint the entire project
 
 endef
 export helpText
@@ -33,7 +36,7 @@ export helpText
 ##
 
 # List of target which should be run every time without caching
-.PHONY: install dev lint
+.PHONY: install dev test test-unit test-lint
 
 
 # Default make target
@@ -52,6 +55,13 @@ dev :
 	npm install
 	./sbin/lint.sh setup
 
+# Test all
+test : test-lint test-unit
+
+# Unit test target
+test-unit :
+	./node_modules/.bin/mocha -R spec --recursive ./tests
+
 # Lint target
-lint :
-	./sbin/lint.sh
+test-lint :
+	./sbin/lint.sh ${lintFilter}

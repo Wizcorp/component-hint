@@ -1,0 +1,12 @@
+{
+	"name": "missing_images",
+	"dependencies": {
+	},
+	"local": [
+	],
+	"paths": [
+	],
+	"images": [
+		"test.image"
+	]
+}

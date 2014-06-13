@@ -1,0 +1,12 @@
+{
+	"name": "missing_json",
+	"dependencies": {
+	},
+	"local": [
+	],
+	"paths": [
+	],
+	"json": [
+		"test.json"
+	]
+}

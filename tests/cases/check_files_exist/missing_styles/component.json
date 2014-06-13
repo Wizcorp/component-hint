@@ -1,0 +1,12 @@
+{
+	"name": "missing_styles",
+	"dependencies": {
+	},
+	"local": [
+	],
+	"paths": [
+	],
+	"styles": [
+		"test.style"
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "multiple_versions",
+	"dependencies": {
+		"dependency_A": "0.0.1"
+	},
+	"local": [
+		"clean"
+	],
+	"paths": [
+		".."
+	],
+	"styles": [
+	],
+	"scripts": [
+	]
+}

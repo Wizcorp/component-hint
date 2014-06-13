@@ -1,0 +1,12 @@
+{
+	"name": "missing_fonts",
+	"dependencies": {
+	},
+	"local": [
+	],
+	"paths": [
+	],
+	"fonts": [
+		"test.font"
+	]
+}
