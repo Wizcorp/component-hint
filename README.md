@@ -61,8 +61,8 @@ Usage
     -w, --warn-on-deps          Errors caused by external dependencies will only
                                 result in a warning and not return a fail status
                                 code.
-    -i, --ignore-paths <paths>  List of paths component-hint should ignore. These can
-                                be absolute, relative or regexes.
+    -i, --ignore-paths <paths>  Colon separated list of paths component-hint should
+                                ignore. (supports minimatch globbing)
     -l, --lookup-paths <paths>  Colon separated list of paths to check for the
                                 existence of missing local dependencies. This is used
                                 to give the user a hint where they can find them.
