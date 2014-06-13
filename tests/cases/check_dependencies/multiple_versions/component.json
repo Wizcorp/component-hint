@@ -1,5 +1,5 @@
 {
-	"name": "multple_versions",
+	"name": "multiple_versions",
 	"dependencies": {
 		"dependency_A": "0.0.1"
 	},

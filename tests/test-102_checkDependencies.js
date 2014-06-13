@@ -79,7 +79,7 @@ describe('Check - Dependencies', function () {
 	it('will check if dependencies required at multiple versions', function (done) {
 		cli.execute([
 			'node', path.resolve('./bin/component-hint'),
-			resolveCasePath('check_dependencies', 'multple_versions'),
+			resolveCasePath('check_dependencies', 'multiple_versions'),
 			'-d', depPaths,
 			'--recursive',
 			'--reporter', 'devNull'
