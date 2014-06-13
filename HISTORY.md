@@ -1,6 +1,15 @@
 Release history
 ===============
 
+v0.4.3
+------
+
+* Introduced unit tests for CLI, component-hint class and each component-hint test
+* Minor fixes to component-hint argument feeding, to prevent breakage when arrays are strings
+* Fixed wording of help `--ignore-paths` argument
+* Fixed line lengths of help output in readme to fix pretty printing on NPM website
+
+
 v0.4.2
 ------
 
