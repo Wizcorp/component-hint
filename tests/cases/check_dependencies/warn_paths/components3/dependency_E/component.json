@@ -1,0 +1,15 @@
+{
+	"name": "dependency_E",
+	"dependencies": {
+	},
+	"local": [
+	],
+	"paths": [
+	],
+	"styles": [
+		""
+	],
+	"scripts": [
+		"missing.script"
+	]
+}

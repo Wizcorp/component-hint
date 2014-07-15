@@ -1,0 +1,17 @@
+{
+	"name": "warn_paths",
+	"dependencies": {
+		"dependency_D": "*"
+	},
+	"local": [
+		"dependency_B",
+		"dependency_E"
+	],
+	"paths": [
+		"./components3"
+	],
+	"styles": [
+	],
+	"scripts": [
+	]
+}

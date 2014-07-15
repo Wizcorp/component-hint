@@ -90,4 +90,24 @@ describe('Check - Dependencies', function () {
 			done();
 		});
 	});
+
+	it('only warn on dependencies listed on --warn-paths', function (done) {
+		var warnPaths = [
+			resolveCasePath('check_dependencies', 'components'),
+			'**/components3/dependency_B'
+		].join(':');
+		cli.execute([
+			'node', path.resolve('./bin/component-hint'),
+			resolveCasePath('check_dependencies', 'warn_paths'),
+			'-d', depPaths,
+			'--recursive',
+			'--reporter', 'devNull',
+			'--warn-paths', warnPaths,
+		], function (error, componentHint) {
+			assert.ifError(error, 'cli#execute returned an error');
+			assert.equal(componentHint.totalErrors, 1, 'did not get 1 lint error as expected');
+			assert.equal(componentHint.totalWarnings, 2, 'did not get 2 lint warnings as expected');
+			done();
+		});
+	});
 });
