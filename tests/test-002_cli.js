@@ -60,14 +60,14 @@ describe('Command Line Interface', function () {
 		});
 	});
 
-	it('checking --warn-on-deps defaults', function (done) {
+	it('checking --warn-paths defaults', function (done) {
 		cli.execute([
 			'node', path.resolve('./bin/component-hint'),
 			resolveCasePath('case-clean', 'component_A'),
 			'--reporter', 'devNull'
 		], function (error, componentHint) {
 			assert.ifError(error, 'cli#execute returned an error');
-			assert.equal(componentHint.warnOnDeps, false, 'warnOnDeps did not return correct default');
+			assert.deepEqual(componentHint.warnPaths, [], 'warnPaths did not return correct default');
 			done();
 		});
 	});
