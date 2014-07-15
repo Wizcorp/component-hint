@@ -21,7 +21,7 @@ Other Features
   it (uses the given `--lookupPaths` option)
 * Skips folders with the same name as a dependency if it does not contain a `component.json` file
 * Recurses into dependencies and checks if there are any other dependency errors
-  (this can be switched to warning level by using --warn-on-deps option)
+  (this can be switched to warning level by using --warn-paths option)
 
 To Do
 -----
@@ -58,9 +58,9 @@ Usage
     -r, --recursive             Recurse into local and external dependencies.
     -d, --dep-paths <paths>     Colon separated list of paths to external
                                 dependencies. (default: "./components")
-    -w, --warn-on-deps          Errors caused by external dependencies will only
-                                result in a warning and not return a fail status
-                                code.
+    -w, --warn-paths <paths>    Colon separated list of paths where component errors
+                                will be converted to warnings. (supports minimatch
+                                globbing)
     -i, --ignore-paths <paths>  Colon separated list of paths component-hint should
                                 ignore. (supports minimatch globbing)
     -l, --lookup-paths <paths>  Colon separated list of paths to check for the
